@@ -17,4 +17,6 @@ body {
 
 .location {
   height: 30vh;
+  width: 50%;
+  display: flex;
 }
