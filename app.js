@@ -2,7 +2,7 @@ window.addEventListener('load', ()=> {
     let long;
     let lat;
 
-    if(navigator.geolocator) {
+    if(navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {
         console.log(position);
       })
