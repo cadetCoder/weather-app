@@ -23,3 +23,7 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+.temperature {
+  flex-direction: column;
+}
