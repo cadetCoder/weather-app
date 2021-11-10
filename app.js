@@ -1,3 +1,6 @@
+//SELECT ELEMENTS
+const iconElement = document.querySelector(".weather-icon");
+
 window.addEventListener('load', ()=> {
     let long;
     let lat;
