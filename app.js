@@ -1,5 +1,6 @@
 //SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
+const itempElement = document.querySelector(".temperature-value p");
 
 window.addEventListener('load', ()=> {
     let long;
