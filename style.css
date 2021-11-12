@@ -14,3 +14,7 @@ body {
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
   color: white;
 }
+
+.container {
+  width: 300px;
+}
