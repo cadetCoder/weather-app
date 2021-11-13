@@ -19,6 +19,10 @@ weather.temperature = {
 
 // APP CONST AND VAR
 const KELVIN = 273;
+// API Key
+const key = "cd4738e1a11c871739d95f5c440bd48d";
+
+//
 
 window.addEventListener('load', ()=> {
     let long;
