@@ -33,4 +33,8 @@ body {
 
 .app-title p {
   text-align: center;
+  padding: 15px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #293251;
 }
