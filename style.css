@@ -57,3 +57,8 @@ body {
   height: 260px;
   background-color: #F4F9FF;
 }
+
+.weather-icon{
+  width: 300px;
+  height: 128px;
+}
