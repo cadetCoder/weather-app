@@ -27,11 +27,8 @@ const key = "cd4738e1a11c871739d95f5c440bd48d";
 window.addEventListener('load', ()=> {
     let long;
     let lat;
-//getting location by geographic coordinates
-    if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(position => {
-        long = position.coords.longitude;
-        lat = position.coords.latitude;
-      })
+//CHECK IF BROWSER SUPPORTS GEOLOCATION
+if('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(setPosition, showError);
     }
 });
