@@ -31,7 +31,7 @@ window.addEventListener('load', ()=> {
 if('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(setPosition, showError);
     }else{
-      notificationELement.style.display= "block";
+      notificationElement.style.display= "block";
       notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>"
     }
 });
