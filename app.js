@@ -22,16 +22,10 @@ const KELVIN = 273;
 // API Key
 const key = "cd4738e1a11c871739d95f5c440bd48d";
 
-// CHECK IF BROWSER SUPPORTS GEOLOCATION
-
-window.addEventListener('load', ()=> {
-    let long;
-    let lat;
 //CHECK IF BROWSER SUPPORTS GEOLOCATION
 if('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(setPosition, showError);
     }else{
       notificationElement.style.display= "block";
-      notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>"
+      notificationElement.innerHTML = "<p>Browser doesn't Support Geolocation</p>";
     }
-});
