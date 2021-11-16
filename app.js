@@ -35,4 +35,6 @@ if('geolocation' in navigator) {
 function setPosition(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
+
+  getWeather(latitude, longitude);
 }
