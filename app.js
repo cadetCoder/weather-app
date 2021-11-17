@@ -1,5 +1,5 @@
 //https://home.openweathermap.org/api_keys
-// api key : cd4738e1a11c871739d95f5c440bd48d
+// api key : 82005d27a116c2880c8f0fcb866998a0
 
 //SELECT ELEMENTS
 const iconElement = document.querySelector(".weather-icon");
@@ -44,4 +44,11 @@ function setPosition(position) {
 function showError(error) {
   notificationElement.style.display= "block";
   notificationElement.innerHTML = `<p> ${error.message} </p>`;
+}
+
+// GET WEATHER DATA FROM API PROVIDER
+function getWeather(latitude, longitude){
+  let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&api=${key}`;
+  console.log(api);
+  
 }
