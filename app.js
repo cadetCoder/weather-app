@@ -60,4 +60,7 @@ function getWeather(latitude, longitude){
       weather.iconId = data.weather[0].icon;
       weather.city =  data.name;
     })
+    .then(function(){
+      displayWeather();
+    });
 }
