@@ -9,9 +9,7 @@ const locationElement = document.querySelector(".location p");
 const notificationElement = document.querySelector(".notification");
 
 // App data
-const weather = {
-
-};
+const weather = {};
 
 weather.temperature = {
   unit: "celsius"
