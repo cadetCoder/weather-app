@@ -40,7 +40,7 @@ function setPosition(position) {
 // SHOW AN ERROR WHEN THERE IS AN ISSUE WITH GEOLOCATION SERVICE
 
 function showError(error) {
-  notificationElement.style.display= "block";
+  notificationElement.style.display = "block";
   notificationElement.innerHTML = `<p> ${error.message} </p>`;
 }
 
