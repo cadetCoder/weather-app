@@ -79,6 +79,12 @@ function celsiusToFahrenheit(temperature){
   return (temperature * 9/5) + 32;
 }
 
+//WHEN THE USER CLICKS ON THE TEMPERATURE ELEMENT
 tempElement.addEventListener("click", function(){
   if(weather.temperature.value === undefined) return;
+
+    if(weather.temperature.unit == "celcius"){
+      let fahrenheit = celsiusToFahrenheit(weather.temperature.value);
+      fahrenheit = Math.floor(fahrenheit);
+    }
 })
